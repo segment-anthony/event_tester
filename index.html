@@ -122,6 +122,29 @@
             background-color: #218838; /* Same hover color as Submit Identify */
         }
     </style>
+    <script>
+        function resetAnalytics() {
+            analytics.reset();
+            alert('Analytics reset successfully!');
+        }
+    </script>
+                
+    <style>
+        .reset-button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .reset-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+
 </head>
 <body>
     <div class="container">
@@ -144,6 +167,12 @@
                     <button type="button" onclick="addIdentifyPropertyField()">Add Trait</button>
                     <input type="submit" class="submit-identify-button" value="Submit Identify">
                 </form>
+            </div>
+            <div>
+                <button class="reset-button" onclick="resetAnalytics()">Reset Analytics IDs</button>
+
+
+                
             </div>
         </div>
 
